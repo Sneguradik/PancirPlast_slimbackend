@@ -5,6 +5,7 @@ project.lock.json
 *.pyc
 nupkg/
 .env
+/db
 
 # Visual Studio Code
 .vscode/*
