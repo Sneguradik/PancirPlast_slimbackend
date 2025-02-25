@@ -18,9 +18,14 @@ public class TelegramBotWorker(IBotService telegramBotService) : BackgroundServi
             {
                 foreach (var update in updates)
                 {
-                    await telegramBotService.SendTextMessage(
-                        "Спасибо за использование нашего бота! Ожидайте уведомлений!",
-                        update.Message.Chat.Id);
+                    if (update.Message is not null)
+                    {
+                        await telegramBotService.SendTextMessage(
+                            "Спасибо за использование нашего бота! Ожидайте уведомлений!",
+                            update.Message.Chat.Id);
+                        telegramBotService.Subscribe(update.Message.Chat.Id);
+                    }
+                    
                 }
                 var offset = updates.Last().UpdateId + 1;
                 updates = (await telegramBotService.Bot

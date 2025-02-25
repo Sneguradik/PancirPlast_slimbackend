@@ -1,6 +1,6 @@
-@PrimitiveApi_HostAddress = http://localhost:5000
+@PrimitiveApi_HostAddress = http://localhost:5020
 
-GET {{PrimitiveApi_HostAddress}}/weatherforecast/
+POST {{PrimitiveApi_HostAddress}}/contact_application/add
 Accept: application/json
 
 ###

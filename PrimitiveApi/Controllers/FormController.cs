@@ -1,17 +1,40 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Text;
+using Microsoft.AspNetCore.Mvc;
+using PrimitiveApi.Dto;
 using PrimitiveApi.Models;
 using PrimitiveApi.Services;
 
 namespace PrimitiveApi.Controllers;
-
+[Route("contact_application")]
 [ApiController]
-[Route("[controller]")]
-public class FormController(MainContext context) : ControllerBase
+public class FormController( ) : ControllerBase
 {
-    public async Task<IActionResult> AddApplication([FromBody] Application application)
+    [HttpPost("add")]
+    public async Task<IActionResult> AddApplication([FromBody] ApplicationDto dto)
     {
-        context.Applications.Add(application);
+        /*var res = context.Applications.Add(new Application()
+        {
+            Name = dto.Name,
+            Surname = dto.Surname,
+            Email = dto.Email,
+            Phone = dto.Phone,
+            Telegram = dto.Telegram,
+            Content = dto.Content,
+            PreferredContact = dto.PreferredContact
+        });
         await context.SaveChangesAsync();
+        var strBuilder = new StringBuilder();
+        strBuilder.AppendLine("Новая заявка");  
+        strBuilder.AppendLine($"ID: {res.Entity.Id}");
+        strBuilder.AppendLine($"Фамилия: {res.Entity.Surname}");
+        strBuilder.AppendLine($"Имя: {res.Entity.Name}");
+        strBuilder.AppendLine($"Предпочитаемый способ связи: {res.Entity.PreferredContact}");
+        strBuilder.AppendLine($"Телефон: {res.Entity.Phone}");
+        strBuilder.AppendLine($"Почта: {res.Entity.Email}");
+        strBuilder.AppendLine($"Телеграм: {res.Entity.Telegram}");
+        strBuilder.AppendLine($"Контент: {res.Entity.Content}");
+        strBuilder.AppendLine($"Дата: {res.Entity.DateCreated}");
+        await botService.SendAll(strBuilder.ToString());*/
         return Ok("Application added");
     }
 }

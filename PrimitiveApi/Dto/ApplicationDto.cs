@@ -1,15 +1,9 @@
-﻿namespace PrimitiveApi.Models;
+﻿using PrimitiveApi.Models;
 
-public enum ContactFormType
-{
-    Email,
-    Telegram,
-    Phone,
-}
+namespace PrimitiveApi.Dto;
 
-public class Application
+public class ApplicationDto
 {
-    public int Id { get; set; }
     public string Name { get; set; } = String.Empty;
     public string Surname { get; set; } = String.Empty;
     public string Email { get; set; } = String.Empty;
@@ -17,5 +11,4 @@ public class Application
     public string Telegram { get; set; } = String.Empty;
     public string Content { get; set; } = String.Empty;
     public ContactFormType PreferredContact { get; set; } = ContactFormType.Telegram;
-    public DateTime DateCreated { get; set; } = DateTime.UtcNow;
 }
