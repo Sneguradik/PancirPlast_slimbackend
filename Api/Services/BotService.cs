@@ -1,9 +1,9 @@
-﻿using Microsoft.Extensions.Options;
-using PrimitiveApi.Dto;
+﻿using Api.Dto;
+using Microsoft.Extensions.Options;
 using Telegram.BotAPI;
 using Telegram.BotAPI.AvailableMethods;
 
-namespace PrimitiveApi.Services;
+namespace Api.Services;
 
 public interface IBotService
 {

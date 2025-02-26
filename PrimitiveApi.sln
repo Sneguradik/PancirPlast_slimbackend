@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimitiveApi", "PrimitiveApi\PrimitiveApi.csproj", "{9CB7F2E5-EBAB-4101-975E-70DEE73F244C}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D2A95918-378D-4ADB-AD07-53CE30436AFE}"
 	ProjectSection(SolutionItems) = preProject
 		compose.yaml = compose.yaml
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "Api\Api.csproj", "{C732A5A5-1953-45A4-B671-084CCC1AB2F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,9 +13,9 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9CB7F2E5-EBAB-4101-975E-70DEE73F244C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9CB7F2E5-EBAB-4101-975E-70DEE73F244C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9CB7F2E5-EBAB-4101-975E-70DEE73F244C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9CB7F2E5-EBAB-4101-975E-70DEE73F244C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C732A5A5-1953-45A4-B671-084CCC1AB2F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C732A5A5-1953-45A4-B671-084CCC1AB2F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C732A5A5-1953-45A4-B671-084CCC1AB2F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C732A5A5-1953-45A4-B671-084CCC1AB2F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -1,6 +1,6 @@
-﻿using PrimitiveApi.Models;
+﻿using Api.Models;
 
-namespace PrimitiveApi.Dto;
+namespace Api.Dto;
 
 public class ApplicationDto
 {

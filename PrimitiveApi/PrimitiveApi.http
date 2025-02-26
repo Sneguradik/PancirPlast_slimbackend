@@ -1,6 +1,0 @@
-@PrimitiveApi_HostAddress = http://localhost:5020
-
-POST {{PrimitiveApi_HostAddress}}/contact_application/add
-Accept: application/json
-
-###

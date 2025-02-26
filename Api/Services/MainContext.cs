@@ -1,7 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
-using PrimitiveApi.Models;
+﻿using Api.Models;
+using Microsoft.EntityFrameworkCore;
 
-namespace PrimitiveApi.Services;
+namespace Api.Services;
 
 public class MainContext(DbContextOptions<MainContext> options) : DbContext(options)
 {

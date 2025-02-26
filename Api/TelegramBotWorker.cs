@@ -1,4 +1,4 @@
-﻿using PrimitiveApi.Services;
+﻿using Api.Services;
 using Telegram.BotAPI;
 using Telegram.BotAPI.GettingUpdates;
 

@@ -1,4 +1,4 @@
-﻿namespace PrimitiveApi.Dto;
+﻿namespace Api.Dto;
 
 public class TelegramBotConfig
 {

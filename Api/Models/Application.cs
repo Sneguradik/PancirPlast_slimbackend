@@ -1,4 +1,4 @@
-﻿namespace PrimitiveApi.Models;
+﻿namespace Api.Models;
 
 public enum ContactFormType
 {
